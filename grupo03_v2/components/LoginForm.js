@@ -1,14 +1,18 @@
+// LoginForm.js
+
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Text } from 'react-native';
+import auth from '@react-native-firebase/auth';
+
 const LoginForm = ({ onLoginSuccess }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  // Adicionando usuário fixo
+  // Usuário fixo existente
   const fixedUser = {
-    email: 'teste',
-    password: 'teste',
+    email: 'teste@teste.com',
+    password: 'teste123',
   };
 
   const handleLogin = async () => {
