@@ -1,3 +1,5 @@
+// App.js
+
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ImageBackground, TextInput, Button } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
@@ -6,6 +8,7 @@ import LoginForm from './components/LoginForm';
 import VagasCadastradas from './components/VagasCadastradas'; // Importe a tela VagasCadastradas
 import RegistroVaga from './components/RegistroVaga';
 import GerenciarVagas from './components/GerenciarVagas';
+import auth from '@react-native-firebase/auth'; // Importe o módulo de autenticação do Firebase
 
 const Stack = createStackNavigator();
 
